@@ -15,17 +15,11 @@ async function Category({ params, searchParams }) {
   const options = setCookieOnReq(cookieStore);
   const { posts } = await getPosts(queries, options);
 
-
-
-
-
   return (
     <div>
-      <br />
-      <br />
       {posts.length === 0 ? (
         <p className="text-lg text-secondary-600 ">
-          پستی موجود نیست
+          پستی در این دسته بندی پیدا نشد
         </p>
       ) : (
         <PostList posts={posts} />
