@@ -1,5 +1,4 @@
-"use client";
-
+"use client"
 function Error({ error, reset }) {
   return (
     <div className="container xl:max-w-screen-xl">
